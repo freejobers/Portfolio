@@ -9,11 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-less": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-util": "^3.0.8",
     "node-sass": "^4.12.0"
   }
 }
