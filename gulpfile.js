@@ -6,7 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require("browser-sync").create();
  
 gulp.task('less', function () {
-  return gulp.src('./css/less/**/*.less')
+  return gulp.src('./css/less/style.less')
   	.pipe(sourcemaps.init())
     .pipe(less().on('error', function(err){
         gutil.log(err);
