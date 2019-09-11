@@ -1,19 +1,44 @@
 .nav {
 	display: flex;
 	height: 100%;
+	align-items: center;
 }
 .nav__link {
-	padding: 0.66rem 2rem;
+	margin-left: 2rem;
 	font-size: 0.93rem;
 	color: @black;
 	text-transform: uppercase;
 	font-weight: 700;
 	text-decoration: none;
+	position: relative;
+	&:after {
+		content: "";
+		width: 0;
+		height: 2px;
+		background-color: @black;
 
-	border: 2px solid transparent;
-	border-radius: 20px;
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		z-index: 1;
+		transition: width .2s linear;
+	}
 
-	&:hover, &.active {
-		border-color: @black;
+	/*  */
+
+	&:hover:not(.nav__link--btn) {
+		&:after {
+			width: 100%;
+		}
+	}
+	&--btn {
+		padding: 0.66rem 2rem;
+		border: 2px solid @black;
+		border-radius: 20px;
+		transition: background-color .2s linear, color .2s linear;
+		&:hover {
+			background-color: @black;
+			color: @white;
+		}
 	}
 }
