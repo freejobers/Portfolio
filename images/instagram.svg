@@ -8,7 +8,7 @@
       .cls-2 {
         fill: #fff;
         font-size: 26px;
-        font-family: SegoeUI, Segoe UI;
+        font-family: FontAwesome;
       }
     </style>
   </defs>
