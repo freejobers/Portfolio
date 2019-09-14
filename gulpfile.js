@@ -1,18 +1,19 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var gutil = require('gulp-util');
-var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require("browser-sync").create();
+var notify = require('gulp-notify');
  
 gulp.task('less', function () {
   return gulp.src('./css/less/style.less')
   	.pipe(sourcemaps.init())
-    .pipe(less().on('error', function(err){
-        gutil.log(err);
-        this.emit('end');
-    }))
-    .pipe(concat('css/style.css'))
+    .pipe(less().on('error', notify.onError(function(err) {
+    	return {
+    		title: 'less',
+    		message: err.message
+    	};
+    })))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./'))
     .pipe(browserSync.reload({
