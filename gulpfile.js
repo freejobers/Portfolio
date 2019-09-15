@@ -1,8 +1,10 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var sourcemaps = require('gulp-sourcemaps');
-var browserSync = require("browser-sync").create();
-var notify = require('gulp-notify');
+"use strict"
+
+const gulp = require('gulp');
+const less = require('gulp-less');
+const sourcemaps = require('gulp-sourcemaps');
+const browserSync = require("browser-sync").create();
+const notify = require('gulp-notify');
  
 gulp.task('less', function () {
   return gulp.src('./css/less/style.less')
