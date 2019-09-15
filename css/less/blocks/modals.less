@@ -1,0 +1,42 @@
+.modal {
+	display: flex;
+	position: fixed;
+	padding: 1rem;
+	width: 100%;
+	height: 100%;
+	background-color: fade(@black, 80%);
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	overflow: auto;
+}
+.modal__dialog {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fff;
+}
+.modal__close {
+	
+	padding: 0;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	top: .9rem;
+	right: .9rem;
+	z-index: 1;
+	transition: transform .2s linear;
+	img {
+		width: 34px;
+		height: 34px;
+	}
+	&:focus {
+			outline: none;
+	}
+	&:hover {
+		transform: translateY(-3px);
+	}
+}
+

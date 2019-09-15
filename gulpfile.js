@@ -16,7 +16,7 @@ gulp.task('less', function () {
     	};
     })))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./css/'))
     .pipe(browserSync.reload({
       stream: true
     }));

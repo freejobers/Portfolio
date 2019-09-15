@@ -8,6 +8,9 @@ body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
+	&.no-scroll {
+		overflow: hidden;
+	}
 }
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -35,6 +38,8 @@ p {
  @import "blocks/news.less";
  @import "blocks/articles.less";
  @import "blocks/footer.less";
+ @import "blocks/modals.less";
+ @import "blocks/modal-work.less";
 
  // helpers
 

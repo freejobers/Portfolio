@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>portfolio</title>
 </head>
-<body>
+<body class="no-scroll">
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -148,9 +148,9 @@
 					</div>
 				</div> 
 			</div> 
-		<div class="text-center">
-			<a href="#" class="btn btn--sm">load more work</a>
-		</div>
+			<div class="text-center">
+				<a href="#" class="btn btn--sm">load more work</a>
+			</div>
 		</div> <!-- portfolio -->
 	</div>
 	<section class="about">
@@ -189,7 +189,8 @@
 					<div class="reviews__rating">
 						<img class="reviews__star" src="images/star.svg" width="13px" height="13px" alt="">
 						<img class="reviews__star" src="images/star.svg" width="13px" height="13px" alt="">
-						<img class="reviews__star" src="images/star.svg" width="13px" height="13px" alt=""><img class="reviews__star" src="images/star.svg" width="13px" height="13px" alt="">
+						<img class="reviews__star" src="images/star.svg" width="13px" height="13px" alt="">
+						<img class="reviews__star" src="images/star.svg" width="13px" height="13px" alt="">
 						<img class="reviews__star reviews__star--unactive" src="images/star.svg" width="13px" height="13px" alt="">
 					</div>
 				</div>
@@ -258,43 +259,83 @@
 			</div>
 		</div>
 	</div>
-<!-- footer -->
-<footer class="footer">
-	<div class="container">
-		<div class="footer__inner">
-			<div class="footer__credits">
-				<div class="footer__copyright">&copy; 2018 UI43 - Free Templates</div>
-				<div class="footer__social">
-					<a href="#" target="_blank">
-						<img src="images/icons/behance-gray.svg" width="24px" height="21px" alt="">
-					</a>
-					<a href="#" target="_blank">
-						<img src="images/icons/dribbble-gray.svg" width="18px" height="21px" alt="">
-					</a>
-					<a href="#" target="_blank">
-						<img src="images/icons/facebook-gray.svg" width="12px" height="21px" alt="">
-					</a>
-					<a href="#" target="_blank">
-						<img src="images/icons/instagram-gray.svg" width="18px" height="21px" alt="">
-					</a>
-					<a href="#" target="_blank">
-						<img src="images/icons/linkedin-gray.svg" width="18px" height="21px" alt="">
-					</a>
-					<a href="#" target="_blank">
-						<img src="images/icons/twitter-gray.svg" width="20px" height="21px" alt="">
-					</a>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__credits">
+					<div class="footer__copyright">&copy; 2018 UI43 - Free Templates</div>
+					<div class="footer__social">
+						<a href="#" target="_blank">
+							<img src="images/icons/behance-gray.svg" width="24px" height="21px" alt="">
+						</a>
+						<a href="#" target="_blank">
+							<img src="images/icons/dribbble-gray.svg" width="18px" height="21px" alt="">
+						</a>
+						<a href="#" target="_blank">
+							<img src="images/icons/facebook-gray.svg" width="12px" height="21px" alt="">
+						</a>
+						<a href="#" target="_blank">
+							<img src="images/icons/instagram-gray.svg" width="18px" height="21px" alt="">
+						</a>
+						<a href="#" target="_blank">
+							<img src="images/icons/linkedin-gray.svg" width="18px" height="21px" alt="">
+						</a>
+						<a href="#" target="_blank">
+							<img src="images/icons/twitter-gray.svg" width="20px" height="21px" alt="">
+						</a>
+					</div>
+				</div>
+				<nav class="footer__nav">
+					<a href="#" class="footer__nav-link">Work</a>
+					<a href="#" class="footer__nav-link">About me</a>
+					<a href="#" class="footer__nav-link">Blog</a>
+					<a href="#" class="footer__nav-link">Contact</a>
+					<a href="#" class="footer__nav-link footer__nav-link--btn ">hire me</a>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modals -->
+
+	<div class="modal">
+		<div class="modal__dialog">
+			<button class="modal__close" type="button">
+				<img src="images/modal-close.svg" alt="">
+			</button>
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+				</div>
+				<div class="modal-work__content">
+					<div class="modal-work__header">
+						<div class="modal-work__title">
+							Project title
+						</div>
+						<div class="modal-work__info">
+							category <span class="modal-work__info-divider">|</span> 2019
+						</div>
+					</div>
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative agency</div>
+					</div>
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nulla quis dolorem aut dicta voluptatem non, sunt assumenda! Deserunt odio porro minima nesciunt alias fugiat qui consequuntur modi dignissimos, magnam!</p>
+						<p>Amet optio culpa, nobis nam dolore rerum, labore? Ipsa vitae suscipit nihil quidem, iusto quos incidunt pariatur vero inventore laborum magnam dolor animi cum nemo, fuga cumque error. Reprehenderit, explicabo!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laudantium voluptates explicabo ratione dolorum nobis soluta praesentium qui excepturi voluptatibus vel enim neque id beatae cumque voluptas, harum a recusandae.</p>
+					</div>
+					<div class="modal-work__footer">
+						<button class="modal-work__btn modal-work__btn--prev">
+						<img src="images/back.svg" alt="">previos</button>
+						<button class="modal-work__btn modal-work__btn--next">
+						next<img src="images/next.svg" alt="">
+						</button>
+					</div>
 				</div>
 			</div>
-			<nav class="footer__nav">
-				<a href="#" class="footer__nav-link">Work</a>
-				<a href="#" class="footer__nav-link">About me</a>
-				<a href="#" class="footer__nav-link">Blog</a>
-				<a href="#" class="footer__nav-link">Contact</a>
-				<a href="#" class="footer__nav-link footer__nav-link--btn ">hire me</a>
-			</nav>
 		</div>
-	</div>
-</footer>
 
-</body>
-</html>
+	</body>
+	</html>
