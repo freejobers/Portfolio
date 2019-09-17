@@ -5,6 +5,7 @@ const less = require('gulp-less');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require("browser-sync").create();
 const notify = require('gulp-notify');
+const autoprefixer = require('gulp-autoprefixer');
  
 gulp.task('less', function () {
   return gulp.src('./css/less/style.less')
@@ -15,6 +16,9 @@ gulp.task('less', function () {
     		message: err.message
     	};
     })))
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions']
+        }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css/'))
     .pipe(browserSync.reload({
