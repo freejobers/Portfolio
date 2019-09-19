@@ -60,5 +60,4 @@ $(function () {
     $('.modal__dialog').on('click', function (event) {
         event.stopPropagation();
     });
-
 });
