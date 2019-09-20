@@ -30,7 +30,8 @@ $(function () {
             $(modalId).find('.modal__dialog').css({
                 transform: "scale(1)"
             })
-        }, 200)
+        }, 200);
+        $('[data-slider="slick"]').slick('setPosition');
     });
     modalClose.on('click', function (event) {
         event.preventDefault();
@@ -60,4 +61,26 @@ $(function () {
     $('.modal__dialog').on('click', function (event) {
         event.stopPropagation();
     });
+
+    // slick slider https://kenwheeler.github.io/slick/
+
+    $('[data-slider="slick"]').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+      });
+    $(".slickPrev").on('click', function (event) {
+        event.preventDefault();
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+        currentSlider.slick('slickPrev');
+    })
+    $(".slickNext").on('click', function (event) {
+        event.preventDefault();
+        let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
+        currentSlider.slick('slickPrev');
+        currentSlider.slick('slickNext');
+    })
 });
