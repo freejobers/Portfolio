@@ -1,3 +1,8 @@
+.intro {
+	@media @mobile {
+		margin-top: 100px;
+	}
+}
 .intro__inner {
 	display: flex;
 	border-bottom: 1px solid fade(@gray, 30%);
@@ -10,9 +15,18 @@
 		padding-bottom: 3rem;
 		background-size: 400px auto;
 	}
+	@media @mobile {
+		background-size: 300px auto;
+	}
 }
 .intro__content {
 	width: 50%;
+	@media @mobile {
+		width: 60%;
+	}
+	@media @mobile-sm {
+		width: 100%;
+	}
 }
 .intro__subtitle {
 	font-size: 2.13rem;
@@ -43,5 +57,11 @@
 	z-index: 1;
 	@media @tablet {
 		width: 350px;
+	}
+	@media @mobile {
+		width: 300px;
+	}
+	@media @mobile-sm {
+		display: none;
 	}
 }

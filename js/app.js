@@ -76,11 +76,20 @@ $(function () {
         event.preventDefault();
         let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
         currentSlider.slick('slickPrev');
-    })
+    });
     $(".slickNext").on('click', function (event) {
         event.preventDefault();
         let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
         currentSlider.slick('slickPrev');
         currentSlider.slick('slickNext');
+    });
+
+
+    const navTogle = $("#navToggle");
+    const nav = $("#nav");
+    navTogle.on("click", function(event) {
+        event.preventDefault();
+        nav.toggleClass("show");
+        
     })
 });
